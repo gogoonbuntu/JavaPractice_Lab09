@@ -53,12 +53,12 @@ public class SalesReporter {
 			//decide whether to get more salesman or not.
 			//mySC.next();//get input.
 			String yn = "n";//get input.
-			//yn = mySC.nextLine();//get input.
-			mySC.nextLine();
-			System.out.println("yn = "+yn);
-			yn = mySC.nextLine();
-			System.out.println("2yn = "+yn);
-			if(yn.equalsIgnoreCase("n")) {mySC.close();done=true;};//if it's N/n, the loop stops.
+			//yn = mySC.nextLine();
+			mySC.nextLine();//clear the buffer before get the input.
+			yn = mySC.nextLine();//get the input!
+			if(yn.equalsIgnoreCase("n")) {mySC.close();done=true;};
+			//equalsIgnoreCase gets input without considering it'c capital or not.
+			//if it's N/n, the loop stops.
 		}
 		
 	}
